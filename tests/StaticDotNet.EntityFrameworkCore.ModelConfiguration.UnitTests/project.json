@@ -7,6 +7,7 @@
 		"dotnet-test-xunit": "2.2.0-preview2-build1029",
 		"Microsoft.EntityFrameworkCore": "1.0.0",
 		"NETStandard.Library": "1.6.0",
+		"NSubstitute": "2.0.0-rc",
 		"StaticDotNet.EntityFrameworkCore.ModelConfiguration": "1.0.0",
 		"xunit": "2.2.0-beta3-build3402"
 	},

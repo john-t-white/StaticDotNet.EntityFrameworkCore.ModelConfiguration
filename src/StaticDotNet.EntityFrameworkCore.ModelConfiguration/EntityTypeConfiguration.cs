@@ -9,7 +9,7 @@ using StaticDotNet.EntityFrameworkCore.ModelConfiguration.Extensions;
 namespace StaticDotNet.EntityFrameworkCore.ModelConfiguration
 {
 	/// <summary>
-	/// Class used to configure an entity.
+	/// Responsible for configuring an entity.
 	/// </summary>
 	/// <typeparam name="TEntity">The the type of entity to configure.</typeparam>
 	public abstract class EntityTypeConfiguration<TEntity>

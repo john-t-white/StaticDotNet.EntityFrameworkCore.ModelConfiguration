@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 namespace StaticDotNet.EntityFrameworkCore.ModelConfiguration
 {
 	/// <summary>
-	/// Interface used to configure an entity.
+	/// Responsible for configuring an entity.
 	/// </summary>
-    public interface IEntityTypeConfiguration
+	public interface IEntityTypeConfiguration
     {
 		/// <summary>
 		/// Gets the type of entity to configure.
