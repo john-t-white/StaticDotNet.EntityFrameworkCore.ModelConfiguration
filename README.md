@@ -1,0 +1,1 @@
+# StaticDotNet.EntityFrameworkCore.ModelConfiguration
