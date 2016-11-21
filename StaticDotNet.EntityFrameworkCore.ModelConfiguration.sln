@@ -17,6 +17,10 @@ Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "StaticDotNet.EntityFramewor
 EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "StaticDotNet.EntityFrameworkCore.ModelConfiguration.UnitTests", "tests\StaticDotNet.EntityFrameworkCore.ModelConfiguration.UnitTests\StaticDotNet.EntityFrameworkCore.ModelConfiguration.UnitTests.xproj", "{CCF5F210-9939-42E4-B3BE-5E1B174F52DF}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "example", "example", "{B23968C3-963C-42B2-949D-1CFBFC0B6A6E}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Example.Website", "example\Example.Website\Example.Website.xproj", "{B7EE9490-48D8-4BC1-8659-3E21A78CDD21}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,6 +35,10 @@ Global
 		{CCF5F210-9939-42E4-B3BE-5E1B174F52DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CCF5F210-9939-42E4-B3BE-5E1B174F52DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CCF5F210-9939-42E4-B3BE-5E1B174F52DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7EE9490-48D8-4BC1-8659-3E21A78CDD21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7EE9490-48D8-4BC1-8659-3E21A78CDD21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7EE9490-48D8-4BC1-8659-3E21A78CDD21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7EE9490-48D8-4BC1-8659-3E21A78CDD21}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -38,5 +46,6 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{8E4CB22D-13AD-4972-858F-DEB28D69142D} = {3309C9BC-4F69-4345-B199-AF76C81E8071}
 		{CCF5F210-9939-42E4-B3BE-5E1B174F52DF} = {47B52DE2-6BBC-461E-B5B1-3925F256B10C}
+		{B7EE9490-48D8-4BC1-8659-3E21A78CDD21} = {B23968C3-963C-42B2-949D-1CFBFC0B6A6E}
 	EndGlobalSection
 EndGlobal
