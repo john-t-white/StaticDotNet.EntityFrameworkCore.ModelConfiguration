@@ -9,6 +9,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using StaticDotNet.EntityFrameworkCore.ModelConfiguration;
 using System.Reflection;
+using Microsoft.EntityFrameworkCore;
 
 namespace Example.Website
 {
@@ -30,6 +31,7 @@ namespace Example.Website
         public void ConfigureServices(IServiceCollection services)
         {
 			services.AddDbContext<ExampleDbContext>( x => x
+				.UseInMemoryDatabase()
 				.AddEntityTypeConfigurations( typeof( Startup ).GetTypeInfo().Assembly )
 			);
 

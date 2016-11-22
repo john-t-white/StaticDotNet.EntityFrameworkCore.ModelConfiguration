@@ -1,0 +1,13 @@
+﻿@using Microsoft.EntityFrameworkCore
+@using Microsoft.EntityFrameworkCore.Metadata
+
+@model IProperty
+
+@{
+	ViewData[ "Title" ] = "Home Page";
+}
+
+<h3>ExampleEntity Configuration - Name Property</h3>
+
+<b>Property:</b> <span>@this.Model.Name</span>
+<b>Max Length:</b> <span>@this.Model.GetMaxLength()</span>

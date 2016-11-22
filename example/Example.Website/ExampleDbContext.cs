@@ -9,5 +9,8 @@ namespace Example.Website
     public class ExampleDbContext
 		: DbContext
     {
+		public ExampleDbContext( DbContextOptions<ExampleDbContext> options )
+			: base( options )
+		{ }
     }
 }
