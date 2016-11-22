@@ -20,7 +20,7 @@ namespace StaticDotNet.EntityFrameworkCore.ModelConfiguration
 		/// Adds <see cref="IEntityTypeConfiguration" /> from all of the <paramref name="assemblies" /> specified.
 		/// </summary>
 		/// <param name="builder">The builder.</param>
-		/// <param name="assemblies">The assemblies to search for <see cref="IEntityTypeConfiguration>" />.</param>
+		/// <param name="assemblies">The assemblies to search for <see cref="IEntityTypeConfiguration" />.</param>
 		/// <returns>The builder.</returns>
 		/// <exception cref="ArgumentNullException">Thrown when <paramref name="assemblies" /> is null.</exception>
 		public static DbContextOptionsBuilder AddEntityTypeConfigurations( this DbContextOptionsBuilder builder, params Assembly[] assemblies )
