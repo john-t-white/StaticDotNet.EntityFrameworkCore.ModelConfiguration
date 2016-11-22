@@ -2,11 +2,11 @@
 	"version": "1.0.0",
 
 	"authors": [ "John T. White" ],
-	"description": "StaticDotNet.EntityFrameworkCore.ModelConfiguration provides a way to configure entiies outside of DbContext.OnModelCreating.",
+	"description": "StaticDotNet.EntityFrameworkCore.ModelConfiguration provides a way to configure entities outside of DbContext.OnModelCreating.",
 
 	"packOptions": {
 		"owners": [ "John T. White" ],
-		"summary": "StaticDotNet.EntityFrameworkCore.ModelConfiguration provides a way to configure entiies outside of DbContext.OnModelCreating.",
+		"summary": "StaticDotNet.EntityFrameworkCore.ModelConfiguration provides a way to configure entities outside of DbContext.OnModelCreating.",
 		"projectUrl": "https://github.com/john-t-white/StaticDotNet.EntityFrameworkCore.ModelConfiguration",
 		"repository": { "url": "https://github.com/john-t-white/StaticDotNet.EntityFrameworkCore.ModelConfiguration" },
 		"tags": [
