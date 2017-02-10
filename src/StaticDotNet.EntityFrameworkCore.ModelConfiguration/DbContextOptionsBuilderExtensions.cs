@@ -19,12 +19,59 @@ namespace StaticDotNet.EntityFrameworkCore.ModelConfiguration
 		/// <summary>
 		/// Adds <see cref="IEntityTypeConfiguration" /> from all of the <paramref name="assemblies" /> specified.
 		/// </summary>
+		/// <typeparam name="TContext">The type of <see cref="DbContext" />.</typeparam>
+		/// <param name="builder">The builder.</param>
+		/// <param name="assemblies">The assemblies to search for <see cref="IEntityTypeConfiguration" />.</param>
+		/// <returns>The builder.</returns>
+		/// <exception cref="ArgumentNullException">Thrown when <paramref name="assemblies" /> is null.</exception>
+		public static DbContextOptionsBuilder<TContext> AddEntityTypeConfigurations<TContext>( this DbContextOptionsBuilder<TContext> builder, params Assembly[] assemblies )
+			where TContext : DbContext
+		{
+			Parameter.Validate( builder, nameof( builder ) )
+				.IsNotNull();
+
+			Parameter.Validate( assemblies, nameof( assemblies ) )
+				.IsNotNull();
+
+			( ( DbContextOptionsBuilder )builder ).AddEntityTypeConfigurations( assemblies );
+
+			return builder;
+		}
+
+		/// <summary>
+		/// Adds <see cref="IEntityTypeConfiguration" /> base on the <paramref name="provider" />.
+		/// </summary>
+		/// <typeparam name="TContext">The type of <see cref="DbContext" />.</typeparam>
+		/// <param name="builder">The builder.</param>
+		/// <param name="provider">The <see cref="IEntityTypeConfigurationProvider" />.</param>
+		/// <returns>The builder.</returns>
+		/// <exception cref="ArgumentNullException">Thrown when <paramref name="provider" /> is null.</exception>
+		public static DbContextOptionsBuilder<TContext> AddEntityTypeConfigurations<TContext>( this DbContextOptionsBuilder<TContext> builder, IEntityTypeConfigurationProvider provider )
+			where TContext : DbContext
+		{
+			Parameter.Validate( builder, nameof( builder ) )
+				.IsNotNull();
+
+			Parameter.Validate( provider, nameof( provider ) )
+				.IsNotNull();
+
+			( ( DbContextOptionsBuilder )builder ).AddEntityTypeConfigurations( provider );
+
+			return builder;
+		}
+
+		/// <summary>
+		/// Adds <see cref="IEntityTypeConfiguration" /> from all of the <paramref name="assemblies" /> specified.
+		/// </summary>
 		/// <param name="builder">The builder.</param>
 		/// <param name="assemblies">The assemblies to search for <see cref="IEntityTypeConfiguration" />.</param>
 		/// <returns>The builder.</returns>
 		/// <exception cref="ArgumentNullException">Thrown when <paramref name="assemblies" /> is null.</exception>
 		public static DbContextOptionsBuilder AddEntityTypeConfigurations( this DbContextOptionsBuilder builder, params Assembly[] assemblies )
 		{
+			Parameter.Validate( builder, nameof( builder ) )
+				.IsNotNull();
+
 			Parameter.Validate( assemblies, nameof( assemblies ) )
 				.IsNotNull();
 
